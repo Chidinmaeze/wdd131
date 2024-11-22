@@ -34,27 +34,39 @@ body {
 }
 
 /* Navigation */
-.nav {
+.navigation {
     grid-area: nav;
-    background-color: #ffdf00; /* Bright Yellow */
+    background-color: #f3d91c; /* Bright Yellow */
     padding: 1rem;
     border-radius: 5px;
 }
 
-.nav ul {
+.navigation ul {
     display: flex;
-    justify-content: space-around;
-    list-style: none;
+    justify-content: space-evenly; /* Ensures even spacing between items */
+    align-items: center; /* Vertically aligns items within the nav bar */
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
 }
 
-.nav a {
+.navigation li {
+    text-align: center; /* Centers text inside each navigation item */
+}
+
+.navigation a {
     text-decoration: none;
     font-weight: bold;
     color: #4a4a4a;
+    padding: 0.5rem 1rem; /* Adds spacing around the links */
+    display: block; /* Makes the link fill its container */
+    border-radius: 5px; /* Optional: Rounded edges for links */
+    transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
 }
 
-.nav a:hover {
-    color: #000;
+.navigation a:hover {
+    color: #fff;
+    background-color: #4a4a4a; /* Adds a dark background on hover */
 }
 
 /* Main and Sidebar */
