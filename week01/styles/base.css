@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; /* Header, Nav, Main, Footer */
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    gap: 1rem;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+
+/* Header */
+.header {
+    grid-area: header;
+    background-color: #5137c7;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Navigation */
+.navigation {
+    grid-area: nav;
+    background-color: #1924b7;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navigation li a:hover {
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+/* Main Section */
+/* Main Section */
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Content takes 3/4, Sidebar 1/4 */
+    gap: 1rem;
+}
+
+/* Content Sections */
+.card {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Equal height rows for content-a and content-b */
+    gap: 1rem;
+}
+
+.card-a, .card-b {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.card h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+/* Sidebar */
+.sidebar {
+    grid-column: 2; /* Occupies the second column in the grid layout */
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2, .sidebar h3 {
+    color: #1924b7;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    background-color: #3626c6;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+}
