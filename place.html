@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eze Chidinma">
+    <meta name="description"
+        content="Practice CSS media query, responsive images, mobile first design, and using JavaScript functions">
+
+    <title>Dubai</title>
+
+    <link href="styles/place-mobile.css" rel="stylesheet">
+    <link href="styles/place-desktop.css" rel="stylesheet">
+
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Dubai City</h1>
+        <p></p>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(min-width: 800px)" srcset="images/Dubai.webp">
+            <source media="(min-width: 300px)" srcset="images/Dubai.webp">
+            <img src="images/Dubai.jpeg" alt="City in the United Arab Emirates" width="400" height="600">
+        </picture>
+
+        <section id="data">
+            <h2>Data</h2>
+
+            <p><strong>Population:</strong> Approximately 3.6 million (as of 2024)</p>
+            <p><strong>Capital:</strong> Dubai itself is the capital of the Emirate of Dubai.</p>
+            <p><strong>Languages:</strong> Official Language: Arabic.</p>
+            <p><strong>Widely Spoken: English (used for business and daily interactions).</p>
+            <p><strong>Currency:</strong> Australian Dollar</p>
+            <p><strong>Time Zone:</strong> Gulf Standard Time (GST), UTC +4.</p>
+            <p><strong>Calling Code:</strong> +971 (United Arab Emirates); Dubai-specific area code: 4.</p>
+            <p><strong>Internet TLD:</strong> .ae (UAE's domain).</p>
+            <p>Dubai is part of the United Arab Emirates (UAE) and is renowned as a global business and tourism hub.</p>
+        </section>
+
+        <section id="weather">
+            <div>
+                <h2>Weather</h2>
+                <img src="images/weather new.jpeg" The rain emoticon" width="50" height="50">
+            </div>
+
+            <p><strong>Temperature:</strong> 10<sup>∘</sup>C</p>
+            <p><strong>Condition:</strong> <span id="cdn"></span></p>
+            <p><strong>Wind:</strong> 5km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy;<span id="currentyear"></span> Eze Chidinma, Osun State, Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Dynamically set the current year and last modified date
+        const currentYearElement = document.getElementById('currentyear');
+        currentYearElement.textContent = new Date().getFullYear();
+
+        const lastModifiedElement = document.getElementById('lastModified');
+        lastModifiedElement.textContent = `Last modified: ${document.lastModified}`;
+    </script>
+</body>
+
+</html>

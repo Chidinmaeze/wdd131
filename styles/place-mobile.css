@@ -1,0 +1,100 @@
+:root {
+    --fontCn: "Frank Ruhl Libre", serif;
+    --fontHd: "Slabo 27px", serif;
+    --colorHd: #00247D;
+    --colorSd: #FF0000;
+    --ColorMd: #FFF;
+    --ColorBs: rgba(0, 0, 0, .8);
+    --fontSn: 18px;
+    --borderFn: 2px solid rgba(0, 0, 0, .25);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    margin: 1rem auto;
+    max-width: 60%;
+    gap: .2rem;
+    font-family: var(--fontCn);
+}
+
+h1,
+h2 {
+    font-family: var(--fontHd);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    background-color: var(--colorHd);
+    height: 100px;
+    color: var(--ColorMd);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+header p {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: var(--colorSd);
+    height: 30px;
+}
+
+main {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    font-size: var(--fontSn);
+}
+
+main h2 {
+    margin: 10px 0;
+}
+
+#data,
+#weather,
+footer {
+    border-top: var(--borderFn);
+    margin-top: 10px;
+
+}
+
+#weather img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+footer {
+    display: grid;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--colorHd);
+    color: whitesmoke;
+    font-size: 13px;
+}

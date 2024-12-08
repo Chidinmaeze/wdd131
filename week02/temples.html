@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" media="(min-width: 768px)" href="temples-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="temples.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Temple Album</h1>
+    </header>
+    <nav class="navigation">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+        <ul id="navList">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Small</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <!-- Temple images and captions repeated 9 times -->
+        <figure>
+            <img src="images/aba-nigeria-temple-lds.jpg" alt="Temple 1">
+            <figcaption>Aba Temple Nigeria</figcaption>
+        </figure>
+        <figure>
+            <img src="images/aba-nigeria-temple-lds.jpg" alt="Temple 2">
+            <figcaption>Aba Temple Nigeria</figcaption>
+        </figure>
+        <figure>
+            <img src="images/aba-nigeria-temple-lds.jpg" alt="Temple 3">
+            <figcaption>Aba Temple Nigeria</figcaption>
+        </figure>
+        <figure>
+            <img src="images/aba-nigeria-temple-lds.jpg" alt="Temple 4">
+            <figcaption>Aba Temple Nigeria</figcaption>
+        </figure>
+        <figure>
+            <img src="images/aba-nigeria-temple-lds.jpg" alt="Temple 5">
+            <figcaption>Aba Temple Nigeria</figcaption>
+        </figure>
+        <figure>
+            <img src="images/aba-nigeria-temple-lds.jpg" alt="Temple 6">
+            <figcaption>Aba Temple Nigeria</figcaption>
+        </figure>
+        <figure>
+            <img src="images/aba-nigeria-temple-lds.jpg" alt="Temple 7">
+            <figcaption>Aba Temple Nigeria</figcaption>
+        </figure>
+        <figure>
+            <img src="images/aba-nigeria-temple-lds.jpg" alt="Temple 8">
+            <figcaption>Aba Temple Nigeria</figcaption>
+        </figure>
+        <figure>
+            <img src="images/aba-nigeria-temple-lds.jpg" alt="Temple 9">
+            <figcaption>Aba Temple Nigeria</figcaption>
+        </figure>
+    </main>
+    <footer class="footer">
+        <p>&copy;<span id="currentyear"></span> Eze Chidinma, Osun State, Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Dynamically set the current year and last modified date
+        const currentYearElement = document.getElementById('currentyear');
+        currentYearElement.textContent = new Date().getFullYear();
+
+        const lastModifiedElement = document.getElementById('lastModified');
+        lastModifiedElement.textContent = `Last modified: ${document.lastModified}`;
+    </script>
+</body>
+</html>
