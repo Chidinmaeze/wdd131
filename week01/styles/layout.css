@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    gap: 1rem;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+
+/* Header */
+.header {
+    grid-area: header;
+    background-color: #ffd700;
+    /* Gold */
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #4a4a4a;
+}
+
+/* Navigation */
+.navigation {
+    grid-area: nav;
+    background-color: #fbfbf6;
+    /* Bright Yellow */
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    /* Ensures even spacing between items */
+    align-items: center;
+    /* Vertically aligns items within the nav bar */
+    list-style: none;
+    /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    text-align: center;
+    /* Centers text inside each navigation item */
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4a4a4a;
+    padding: 0.5rem 1rem;
+    /* Adds spacing around the links */
+    display: block;
+    /* Makes the link fill its container */
+    border-radius: 5px;
+    /* Optional: Rounded edges for links */
+    transition: color 0.3s, background-color 0.3s;
+    /* Smooth hover effect */
+}
+
+.navigation a:hover {
+    color: #fff;
+    background-color: #4a4a4a;
+    /* Adds a dark background on hover */
+}
+
+/* Main and Sidebar */
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+
+.content {
+    background-color: #fffacd;
+    /* Lemon Chiffon */
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #ffebcd;
+    /* Blanched Almond */
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    background-color: #ffd700;
+    /* Gold */
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #4a4a4a;
+}
