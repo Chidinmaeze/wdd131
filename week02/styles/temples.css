@@ -1,0 +1,94 @@
+/* styles/temples.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the header and main content */
+}
+
+header h1 {
+    text-align: left;
+    padding: 1rem 0;
+    width: 80%;
+
+}
+
+header {
+    text-align: left;
+    padding: 1rem 0;
+    /* Match main content width */
+}
+
+.navigation {
+    text-align: right;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    /* Center the navigation links */
+    width: 100%;
+}
+
+.navigation li {
+    margin: 0 1rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    /* Arrange image groups vertically */
+    align-items: center;
+    /* Center the image groups */
+    width: 80%;
+    /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+.image-group {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.image-group.last-group {
+    justify-content: center;
+    /* Center the last image group */
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.content-image {
+    width: 150px;
+    /* Adjust as needed */
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.linkedin-pic {
+    width: 50px;
+    /* Adjust as needed */
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+    width: 100%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Temples</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <script src="scripts/temples.js" defer></script>
+
+<body>
+
+    <header>
+        <h1> Temple Album</h1>
+        <nav class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Small</a></li>
+        </nav>
+
+    </header>
+    <main class="image-container">
+        <h1>Home</h1>
+        <div class="image-group">
+            <div class="image-wrapper">
+                <img src="images/IMG_0672.jpg" alt="Image 1" class="content-image" style="width: 100px; height: auto; ">
+                <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
+            </div>
+            <div class="image-wrapper">
+                <img src="images/IMG_0672.jpg" alt="Image 2" class="content-image" style="width: 100px; height: auto; ">
+                <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
+            </div>
+            <div class="image-wrapper">
+                <img src="images/IMG_0672.jpg" alt="Image 3" class="content-image" style="width: 100px; height: auto; ">
+                <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
+            </div>
+            <div class="image-group">
+                <div class="image-wrapper">
+                    <img src="images/IMG_0672.jpg" alt="Image 4" class="content-image"
+                        style="width: 100px; height: auto; ">
+                    <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/IMG_0672.jpg" alt="Image 5" class="content-image"
+                        style="width: 100px; height: auto; ">
+                    <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/IMG_0672.jpg" alt="Image 6" class="content-image"
+                        style="width: 100px; height: auto; ">
+                    <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
+                </div>
+                <div class="image-group last-group">
+                    <div class="image-wrapper">
+                        <img src="images/IMG_0672.jpg" alt="Image 7" class="content-image"
+                            style="width: 100px; height: auto; ">
+                        <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
+                    </div>
+
+                </div>
+
+                <footer>
+
+                </footer>
+                <footer class="footer">
+                    <p>
+                        &copy;<span id="currentyear"></span>&#127802Eze Chidinma, Osun State, Nigeria.
+                    </p>
+                    <p id="lastModified"></p>
+
+                </footer>
+                <script>
+                    document.getElementById('currentyear').textContent = new Date().getFullYear();
+                </script>
+
+</body>
+
+</html>
