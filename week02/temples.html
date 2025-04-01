@@ -3,78 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Temples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - LDS Temples All Over The World</title>
+    <meta name="description" content="Displaying some Latter day saints temples.">
+    <meta name="author" content="Chidinma Eze">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- Javascripts -->
     <script src="scripts/temples.js" defer></script>
+</head>
 
 <body>
-
     <header>
-        <h1> Temple Album</h1>
-        <nav class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Old</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Large</a></li>
-            <li><a href="#">Small</a></li>
+        <h1 class="bangers-regular">Temple Album</h1>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
         </nav>
-
     </header>
-    <main class="image-container">
-        <h1>Home</h1>
-        <div class="image-group">
-            <div class="image-wrapper">
-                <img src="images/IMG_0672.jpg" alt="Image 1" class="content-image" style="width: 100px; height: auto; ">
-                <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
-            </div>
-            <div class="image-wrapper">
-                <img src="images/IMG_0672.jpg" alt="Image 2" class="content-image" style="width: 100px; height: auto; ">
-                <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
-            </div>
-            <div class="image-wrapper">
-                <img src="images/IMG_0672.jpg" alt="Image 3" class="content-image" style="width: 100px; height: auto; ">
-                <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
-            </div>
-            <div class="image-group">
-                <div class="image-wrapper">
-                    <img src="images/IMG_0672.jpg" alt="Image 4" class="content-image"
-                        style="width: 100px; height: auto; ">
-                    <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
-                </div>
-                <div class="image-wrapper">
-                    <img src="images/IMG_0672.jpg" alt="Image 5" class="content-image"
-                        style="width: 100px; height: auto; ">
-                    <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
-                </div>
-                <div class="image-wrapper">
-                    <img src="images/IMG_0672.jpg" alt="Image 6" class="content-image"
-                        style="width: 100px; height: auto; ">
-                    <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
-                </div>
-                <div class="image-group last-group">
-                    <div class="image-wrapper">
-                        <img src="images/IMG_0672.jpg" alt="Image 7" class="content-image"
-                            style="width: 100px; height: auto; ">
-                        <img src="images/linkedin_logo.png" alt="LinkedIn Profile pic" class="linkedin-pic">
-                    </div>
+    <main>
+        <h2 class="poppins-bold">Home</h2>
+        <div class="gallery">
+            <figure><img src="images/Temple pic.png" alt=" Temple 1">
+                <figcaption>Temple pic</figcaption>
+            </figure>
+            <figure><img src="images/Temple pic.png" alt=" Temple 2">
+                <figcaption>Temple pic</figcaption>
+            </figure>
+            <figure><img src="images/Temple pic.png" alt=" Temple 3">
+                <figcaption>Temple pic</figcaption>
+            </figure>
+            <figure><img src="images/Temple pic.png" alt=" Temple 4">
+                <figcaption>Temple pic</figcaption>
+            </figure>
+            <figure><img src="images/Temple pic.png" alt=" Temple 5">
+                <figcaption>Temple pic</figcaption>
+            </figure>
+            <figure><img src="images/Temple pic.png" alt=" Temple 6">
+                <figcaption>Temple pic</figcaption>
+            </figure>
+            <figure><img src="images/Temple pic.png" alt=" Temple 7">
+                <figcaption>Temple pic</figcaption>
+            </figure>
+            <figure><img src="images/Temple pic.png" alt=" Temple 8">
+                <figcaption>Temple pic</figcaption>
+            </figure>
+            <figure><img src="images/Temple pic.png" alt=" Temple 9">
+                <figcaption>Temple pic</figcaption>
+            </figure>
 
-                </div>
-
-                <footer>
-
-                </footer>
-                <footer class="footer">
-                    <p>
-                        &copy;<span id="currentyear"></span>&#127802Eze Chidinma, Osun State, Nigeria.
-                    </p>
-                    <p id="lastModified"></p>
-
-                </footer>
-                <script>
-                    document.getElementById('currentyear').textContent = new Date().getFullYear();
-                </script>
-
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - SP Web & Software Solution - Nigeria ! Chidinma Eze @Brigham Young
+            University- Idaho</p>
+        <p class="lastM">Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>
