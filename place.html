@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - Country Page</title>
+    <meta name="description" content="Information about Nigeria which includes images, country data, and weather.">
+    <meta name="author" content="Chidinma Eze">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp alt=" Temple name and location" width="500" height="250">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <div>
+                <ul>
+                    <li>Population: </li>
+                    <li>Capital: </li>
+                    <li>Language: </li>
+                    <li>Currency: </li>
+                    <li>Time Zone: </li>
+                    <li>Calling Code: </li>
+                    <li>Internet TLD: </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>218,541,212</li>
+                    <li>Abuja</li>
+                    <li>English, Other native languages</li>
+                    <li>Naira</li>
+                    <li>GMT+1</li>
+                    <li>+234</li>
+                    <li>.ng</li>
+                </ul>
+            </div>
+        </section>
+        <section class="weather">
+            <div>
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="Weather Image" width="100" height="100">
+            </div>
+            <div>
+                <ul>
+                    <li>Temperature:</li>
+                    <li>Conditions:</li>
+                    <li>Humidity:</li>
+                    <li>Wind:</li>
+                    <li>Wind Chill:</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>226.9°C</li>
+                    <li>tropical</li>
+                    <li>84.7%</li>
+                    <li>2 to 9.5 m/s</li>
+                    <li> >= 35°C</li>
+                </ul>
+            </div>
+        </section>
+        <section class="weather">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <g data-name="Layer 1">
+                        <path class="cls-1" d="M404.07,234.75c9.67,0,9.65,15,0,15H370.42c-9.67,0-9.65-15,0-15Z" />
+                        <path class="cls-1"
+                            d="M341.39,254.91q.61-4.35.82-8.78a73.85,73.85,0,0,1,29.32,39.37A51.76,51.76,0,0,1,361.19,388H354c0-3.72,2.46-7.44,7.24-7.5,22-.3,41.21-16.61,44-38.71,2.89-23.28-13.08-44.14-35.61-49a7.53,7.53,0,0,1-5.24-5.23A66.86,66.86,0,0,0,341.39,254.91Z" />
+                        <!-- Additional SVG paths here -->
+                    </g>
+                </svg>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - SP Web & Software Solution - Nigeria! Chidinma Eze @Brigham Young
+            University- Idaho</p>
+        <p class="lastM">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        // JavaScript for displaying current year and last modified date
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
