@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog World City - Shop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/dogworld.css">
+    <link rel="stylesheet" href="styles/dogworld_large.css">
+    <script src="scripts/dogworld.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/dogworld_logo.webp" alt="Dog World City Logo" loading="lazy">
+        <h1>Dog World City</h1>
+        <p>Your one-stop shop for all your pet's needs!</p>
+        <p>FOOD | TOYS | ACCESSORIES | HEALTHCARE | GROOMING</p>
+    </header>
+
+    <nav>
+        <a href="dogworldcity.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="account.html">My Account</a>
+    </nav>
+
+    <main class="shop-container">
+        <section class="shop-intro">
+            <h2>Shop for All Your Dog's Needs</h2>
+            <p>
+                Discover a wide selection of high-quality products for your furry friend at Dog World City.
+                We offer everything you need to keep your dog happy, healthy, and well-cared for.
+            </p>
+        </section>
+
+        <section class="product-categories">
+            <h2>Categories</h2>
+            <ul>
+                <li>
+                    <a href="food.html">
+                        <img src="images/dog_cannedfood.webp" alt="Dog Food" loading="lazy">
+                        <h3>Dog Food</h3>
+                        <p>Premium nutrition for every life stage.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="accessories.html">
+                        <img src="images/dog_toys.webp" alt="Dog Toys" loading="lazy">
+                        <h3>Toys</h3>
+                        <p>Durable and engaging toys for playtime.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="accessories.html">
+                        <img src="images/dog_accessories.webp" alt="Dog Collars" loading="lazy">
+                        <h3>Collars & Leashes</h3>
+                        <p>Stylish and functional gear for walks.</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="grooming.html">
+                        <img src="images/dog_grooming.webp" alt="Dog Grooming" loading="lazy">
+                        <h3>Grooming</h3>
+                        <p>Tools and supplies for a healthy coat.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="treats.html">
+                        <img src="images/dog_dryfood.webp" alt="Dog Treats" loading="lazy">
+                        <h3>Treats</h3>
+                        <p>Tasty rewards for your furry friend.</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <article class="product-item">
+                    <img src="images/dog_dryfood.webp" alt="Featured Dog Food" loading="lazy">
+                    <h3>High-Protein Kibble</h3>
+                    <p>A nutritious blend for active dogs.</p>
+                    <p class="price">$4000 per KG</p>
+                    <button>Add to Cart</button>
+                </article>
+                <article class="product-item">
+                    <img src="images/dog_toys.webp" alt="Featured Dog Toy" loading="lazy">
+                    <h3>Durable Chew Toy</h3>
+                    <p>Long-lasting fun for strong chewers.</p>
+                    <p class="price"> &#8358; 2500 - 4000 (Depending on Size Chosen)</p>
+                    <button>Add to Cart</button>
+                </article>
+                <article class="product-item">
+                    <img src="images/dog_leash.webp" alt="Featured Dog Collar" loading="lazy">
+                    <h3>Leather Collar</h3>
+                    <p>Stylish and comfortable collar.</p>
+                    <p class="price"> &#8358;4000</p>
+                    <button>Add to Cart</button>
+                </article>
+                <article class="product-item">
+                    <img src="images/dog_supplement.webp" alt="Featured Dog Supplement" loading="lazy">
+                    <h3>Joint Supplement</h3>
+                    <p>Support for healthy joints.</p>
+                    <p class="price">&#8358;8000</p>
+                    <butto8000Add to Cart</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Dog World City | Your Pet's Paradise</p>
+        <p id="lastModified">Last Modification: <span></span></p>
+        <a href="citations.html">References</a>
+        <div class="social">
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="images/fb_facebook_facebook logo_icon.svg" alt="Facebook" loading="lazy">
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="images/instagram_logo.svg" alt="Instagram" loading="lazy">
+            </a>
+
+        </div>
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').querySelector('span').textContent = document.lastModified;
+    </script>
+</body>
+
+</html>

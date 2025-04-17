@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Dog World City</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/dogworld.css">
+    <link rel="stylesheet" href="styles/dogworld_large.css">
+    <script src="scripts/dogworld.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/dogworld_logo.webp" alt="Dog World City Logo" loading="lazy">
+        <h1>Dog World City</h1>
+        <p>Your one-stop shop for all your pet's needs!</p>
+        <p>FOOD | TOYS | ACCESSORIES | HEALTHCARE | GROOMING</p>
+    </header>
+
+    <nav>
+        <a href="dogworldcity.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="account.html">My Account</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>
+                At Dog World City, our mission is to provide exceptional products and services that enhance the lives of
+                dogs
+                and their owners. We strive to be the most trusted and reliable source for all dog-related needs,
+                offering
+                convenience, quality, and expert advice.
+            </p>
+        </section>
+
+        <section>
+            <h2>Our Vision</h2>
+            <p>
+                We envision a community where all dogs are healthy, happy, and well-cared for. Our goal is to be the
+                leading
+                pet shop that sets the standard for excellence in customer service, product selection, and innovative
+                solutions for pet care.
+            </p>
+        </section>
+
+        <section>
+            <h2>Why Choose Dog World City?</h2>
+            <p>
+                With a passion for pets at our core, we offer a comprehensive range of high-quality products, including
+                premium
+                dog food, durable toys, essential accessories, and top-notch healthcare solutions. We are committed to
+                providing a seamless shopping experience, expert grooming services, and valuable resources to support
+                dog
+                owners in every aspect of pet care.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Dog World City | Your Pet's Paradise</p>
+        <p id="lastModified">Last Modification: <span></span></p>
+        <a href="citations.html">References</a>
+        <div class="social">
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="images/fb_facebook_facebook logo_icon.svg" alt="Facebook" loading="lazy">
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="images/instagram_logo.svg" alt="Instagram" loading="lazy">
+            </a>
+            <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" aria-label="WhatsApp">
+                <img src="images/whatsapp_logo.png" alt="WhatsApp" loading="lazy">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').querySelector('span').textContent = document.lastModified;
+    </script>
+</body>
+
+</html>

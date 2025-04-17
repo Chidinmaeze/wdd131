@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog World City - Contact Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/dogworld.css">
+    <link rel="stylesheet" href="styles/dogworld_large.css">
+    <script src="scripts/dogworld.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/dogworld_logo.webp" alt="Dog World City Logo" loading="lazy">
+        <h1>Dog World City</h1>
+        <p>Your one-stop shop for all your pet's needs!</p>
+        <p>FOOD | TOYS | ACCESSORIES | HEALTHCARE | GROOMING</p>
+    </header>
+
+    <nav>
+        <a href="dogworldcity.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="account.html">My Account</a>
+    </nav>
+    <main class="contact-container">
+        <section class="contact-description">
+            <h2>Get in Touch</h2>
+            <p>
+                At Dog World City, we value your feedback and are here to assist you with any inquiries regarding our
+                products, services, or store locations. We are committed to providing the best support for you and your
+                beloved pets.
+            </p>
+            <p>
+                Connect with us on social media to stay updated on our latest products, promotions, and events.
+            </p>
+            <div class="social-handles">
+                <p>Follow us on:</p>
+                <a href="https://facebook.com" aria-label="Facebook" target="_blank">Facebook</a>
+                <a href="https://instagram.com" aria-label="Instagram" target="_blank">Instagram</a>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <form id="newsletter-form">
+                    <label for="newsletter-email">Enter your email to receive updates:</label>
+                    <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your email address"
+                        required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact-map">
+            <h2>Our Stores</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1s16.04615780347151!2d7.3625277!3d9.9324838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104d8c1e99558933%3A0x698278b7ed66b996!2sKado%20Estate!5e0!3m2!1sen!2sng!4v1708283391718!5m2!1sen!2sng"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="outlet-caption">
+                <p><strong>Main Store: </strong> Okesa, Ilesa, Osun State</p>
+                <p><strong>Branch Office:</strong>Ayeso, Ilesa, Osun State</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Dog World City | Your Pet's Paradise</p>
+        <p id="lastModified">Last Modification: <span></span></p>
+        <a href="citations.html">References</a>
+        <div class="social">
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="images/fb_facebook_facebook logo_icon.svg" alt="Facebook" loading="lazy">
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="images/instagram_logo.svg" alt="Instagram" loading="lazy">
+            </a>
+
+        </div>
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').querySelector('span').textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
